@@ -1,0 +1,85 @@
+.sidebar {
+    float: left;
+    width: 250px;
+    background-color: #faeefc;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 20px;
+    
+}
+
+.sidebar__top-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: #f9d8ff 2px solid;
+    padding: 10px;
+}
+
+.sidebar__image-wrapper {
+    position: relative;
+}
+
+.sidebar__image {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar__online-icon {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(35, 242, 38);
+    position: absolute;
+    border-radius: 50%;
+    border: #faeefc 2px solid;
+    right: 8px;
+    bottom: 8px;
+}
+
+.sidebar__note {
+    color: #621071;
+}
+
+.sidebar__nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 40px;
+    border-bottom: #f9d8ff 2px solid;
+}
+
+.sidebar__nav-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #6b3e73;
+}
+
+.sidebar__git-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.sidebar__git-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar__git-name {
+    font-weight: 600;
+}
+
+.sidebar__git-text {
+    font-size: 12px;
+}

@@ -1,0 +1,27 @@
+.skills {
+    border: #faeefc 5px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.skills__name-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.skilss__item {
+    background-color: #faeefc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+}

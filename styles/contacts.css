@@ -1,0 +1,134 @@
+.contacts__wrapper {
+    background-image: linear-gradient(to right, #faeefc,#ffffff, transparent);
+    border: #faeefc 5px solid;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-right: #f6c0ff 2px solid;
+}
+
+.contacts__add-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__social-list {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.contacts__social-item {
+    cursor: pointer;
+}
+
+.contacts__social-link {
+    background-color: #f6c0ff;
+    width: 46px;
+    height: 46px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__form-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacts__form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+}
+
+.contacts__form-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.contacts__form-name input, .contacts__form-email input, .contacts__form-direction select, .contacts__form-message textarea {
+    padding: 5px;
+    border: #af62bd 1px solid;
+    border-radius: 5px;
+}
+
+.contacts__form-name input::placeholder, .contacts__form-email input::placeholder, .contacts__form-direction select:invalid, .contacts__form-message textarea::placeholder {
+    color: #6b3e73;
+}
+
+.contacts__form-message textarea {
+    max-width: 100%;
+    min-height: 80px;
+}
+
+.contacts__form-email {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.contacts__form-direction {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.contacts__form-message {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.contacts__image {
+    position: absolute;
+    right: -100px;
+    top: 70px;
+    height: 400px;
+    width: 300px;
+}
+
+.contacts__button {
+    margin-top: auto;
+    max-width: 200px;
+    z-index: 1;
+}
+
+.contacts__button {
+    background-color: #8205c1;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.contacts__button:hover {
+    background-color: #b726ff;
+}

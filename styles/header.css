@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fef8ff;
+    border-bottom: #faeefc 2px solid;
+}
+
+.header__logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .header__logo-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.header__logo-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav-link {
+    color: black;
+    transition: color .3s;
+    position: relative;
+}
+
+.header__nav-link:hover {
+    color: #8205c1;
+}
+
+.header__nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #9918da;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.header__nav-link:hover::after {
+    opacity: 1;
+}
+
+.header__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .header__btn-wrapper {
+        flex-direction: column;
+    }
+}
+
+.header__theme-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.header__phone-btn {
+    background-color: #8205c1;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.header__phone-btn:hover {
+    background-color: #b726ff;
+}
+

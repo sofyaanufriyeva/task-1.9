@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-wrapper">
+            <svg width="100" height="50">
+                <use xlink:href="icons/code.svg#code-icon"></use>
+            </svg>
+            <span class="header__logo-name">DevProfile</span>
+        </div>
+        <nav>
+            <ul class="header__nav-list"> 
+                <li><a class="header__nav-link" href="#profile">Профиль</a></li>
+                <li><a class="header__nav-link" href="#skills">Навыки</a></li>
+                <li><a class="header__nav-link" href="#projects">Проекты</a></li>
+                <li><a class="header__nav-link" href="#contacts">Контакты</a></li> 
+            </ul>
+        </nav>
+        <div class="header__btn-wrapper">
+            <button class="header__theme-btn">
+                <svg width="30" height="30">
+                    <use xlink:href="icons/sun-color-icon.svg#sun-icon"></use>
+                </svg>
+            </button>
+            <button class="header__phone-btn">Связаться</button>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar__top-info">
+                <div class="sidebar__image-wrapper">
+                    <img class="sidebar__image" src="images/female.jpg" alt="Фотография девушки" width="100" height="100">
+                    <div class="sidebar__online-icon"></div> 
+                </div>
+                <h2>Софья Ануфриева</h2>
+                <p class="sidebar__note" id="hint">Frontend Developer</p>
+            </div>
+            <nav>
+                <ul class="sidebar__nav-list">
+                    <li>
+                        <a class="sidebar__nav-link" href="#profile">
+                            <svg width="24" height="24">
+                                <use xlink:href="icons/home-icon.svg#home-icon"></use>
+                            </svg>
+                            Профиль
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="#skills">
+                            <svg width="24" height="24">
+                                <use xlink:href="icons/star-icon.svg#star-icon"></use>
+                            </svg>
+                            Навыки
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="#projects">
+                            <svg width="24" height="24">
+                                <use xlink:href="icons/folder-icon.svg#folder-icon"></use>
+                            </svg>
+                            Проекты
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="#contacts">
+                            <svg width="24" height="24">
+                                <use xlink:href="icons/messages-icon.svg#messages-icon"></use>
+                            </svg>
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="sidebar__git-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                <svg width="24" height="24">
+                    <use xlink:href="icons/external-link.svg#external-link-icon"></use>
+                </svg>
+                <div class="sidebar__git-wrapper">
+                    <p class="sidebar__git-name">GitHub</p>
+                    <span class="sidebar__git-text">Мои работы</span>
+                </div>
+                <svg width="24" height="24">
+                    <use xlink:href="icons/arrow-right.svg#arrow-right-icon"></use>
+                </svg>
+            </a>
+        </aside>
+        <div class="wrapper">
+            <section id="profile"> 
+                <div class="profile">
+                    <div class="profile__wrapper">
+                        <div class="profile__inner">
+                            <svg width="20" height="20">
+                                <use xlink:href="icons/circle-icon.svg#circle-icon"></use>
+                            </svg>
+                            <span>Frontend Developer</span>
+                        </div>
+                        <h1>Софья Ануфриева</h1>
+                        <p class="profile__text">Создаю современные и удобные веб-приложения!</p>
+                        <a class="profile__btn" href="#projects">
+                            Посмотреть проекты
+                            <svg width="12" height="12">
+                                <use xlink:href="icons/arrow-down.svg#arrow-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="profile__image" src="images/image-1.jpg" alt="Картинка кода" width="100" height="100">
+                </div>
+            </section>
+            <section id="skills">
+                <div class="skills">
+                    <div class="skills__name-wrapper">
+                        <svg width="24" height="24">
+                            <use xlink:href="icons/star-icon.svg#star-icon"></use>
+                        </svg>
+                        <h2>Мои навыки</h2>
+                    </div>
+                    <ul class="skills__list">
+                        <li class="skilss__item">HTML</li>
+                        <li class="skilss__item">CSS</li>
+                        <li class="skilss__item">JavaScript</li>
+                        <li class="skilss__item">React</li>
+                        <li class="skilss__item">TypeScript</li>
+                        <li class="skilss__item">Figma</li>
+                        <li class="skilss__item">Git</li>
+                        <li class="skilss__item">Next.js</li>
+                        <li class="skilss__item">TailWind CSS</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="projects">
+                    <div class="projects__info-top">
+                        <div class="projects__name-wrapper">
+                            <svg width="20" height="20">
+                                <use xlink:href="icons/folder-icon.svg#folder-icon"></use>
+                            </svg>
+                            <h2>Мои проекты</h2>
+                        </div>
+                        <a class="projects__link-info" href="https://developer.mozilla.org/en-US/" target="_blank">
+                            Все проекты
+                            <svg width="16" height="16">
+                                <use xlink:href="icons/arrow-right.svg#arrow-right-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <article class="projects__inner">
+                                <img class="projects__image" src="images/image-2.jpg" alt="Картинка рабочего стола" width="200"  height="100">
+                                <div class="projects__info">
+                                    <h3>Личный блог</h3>
+                                    <p>Современный блог о веб-разработке Современный блог о веб-разработке Современный блог о веб-разработке Современный блог о веб-разработке</p>
+                                    <a class="projects__link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        Открыть проект
+                                        <svg width="16" height="16">
+                                            <use xlink:href="icons/arrow-right.svg#arrow-right-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="projects__item">
+                            <article class="projects__inner">
+                                <img class="projects__image" src="images/image-3.jpg" alt="Картинка онлайн-задач" width="200"  height="100">
+                                <div class="projects__info">
+                                    <h3>Задачи онлайн</h3>
+                                    <p>Удобный таск-трекер</p>
+                                    <a class="projects__link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        Открыть проект
+                                        <svg width="16" height="16">
+                                            <use xlink:href="icons/arrow-right.svg#arrow-right-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="projects__item">
+                            <article class="projects__inner">
+                                <img class="projects__image" src="images/image-4.jpg" alt="Картинка природы" width="200"  height="100">
+                                <div class="projects__info">
+                                    <h3>Путешествия</h3>
+                                    <p>Сайт о путешествиях</p>
+                                    <a class="projects__link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        Открыть проект
+                                        <svg width="16" height="16">
+                                            <use xlink:href="icons/arrow-right.svg#arrow-right-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contacts">
+                <div class="contacts__wrapper"> 
+                    <div class="contacts__info">
+                        <svg width="200" height="200">
+                            <use xlink:href="icons/letter.svg#letter-icon"></use>
+                        </svg>
+                        <div class="contacts__add-wrapper">
+                            <h3>Давайте сотрудничать!</h3>
+                            <p>У вас есть идея, проект или просто вопрос - напишите мне.</p>
+                            <ul class="contacts__social-list">
+                                <li class="contacts__social-item">
+                                    <a class="contacts__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        <svg width="30" height="30">
+                                            <use xlink:href="icons/github.svg#github-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contacts__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        <svg width="30" height="30">
+                                            <use xlink:href="icons/linkedin.svg#linkedin-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contacts__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        <svg width="30" height="30">
+                                            <use xlink:href="icons/telegram.svg#telegram-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contacts__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                                        <svg width="30" height="30">
+                                            <use xlink:href="icons/external-link.svg#external-link-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form method="GET" action="#">
+                        <fieldset>
+                            <legend class="contacts__form-wrapper">
+                                <svg width="20" height="20">
+                                    <use xlink:href="icons/messages-icon.svg#messages-icon"></use>
+                                </svg>
+                                Контактная форма
+                            </legend>
+                            <div class="contacts__form">
+                                <div class="contacts__form-name">
+                                    <label for="name">Имя <span>*</span></label>
+                                    <input id="name" type="text" name="name" placeholder="Ваше имя" minlength="3" maxlength="20" required>
+                                </div>
+                                <div class="contacts__form-email">
+                                    <label for="email">Email <span>*</span></label>
+                                    <input id="email" type="email" name="email" placeholder="you@example.com" minlength="3" maxlength="50" required>
+                                </div>
+                                <div class="contacts__form-direction">
+                                    <label for="direction">Направление <span>*</span></label>
+                                    <select name="direction" id="direction" required>
+                                        <option value="" disabled selected hidden>Выберите направление</option>
+                                        <option value="landing">Лендинг</option>
+                                        <option value="corporate-website">Корпоративный сайт</option>
+                                        <option value="online-store">Интернет-магазин</option>
+                                    </select>
+                                </div>
+                                <div class="contacts__form-message">
+                                    <label for="message">Сообщение <span>*</span></label>
+                                    <textarea name="message" id="message" placeholder="Напишите ваше сообщение..." minlength="10" maxlength="500" required></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button class="contacts__button" type="submit">Отправить сообщение</button>
+                        <img class="contacts__image" src="images/twig.jpg" alt="Иллюстрация веточки дерева" width="100" height="130">
+                    </form>
+                </div>
+            </section>
+            <section>
+                <table class="schedule">
+                    <caption>Мой график на неделю</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">День</th>
+                            <th scope="col">Учеба</th>
+                            <th scope="col">Спорт</th>
+                            <th scope="col">Саморазвитие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Пн</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>1.5 ч</td>
+                            <td>1 ч</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Вт</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>-</td>
+                            <td>1 ч</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ср</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>1.5 ч</td>
+                            <td>1 ч</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Чт</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>-</td>
+                            <td>1 ч</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Пт</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>1.5 ч</td>
+                            <td>1 ч</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Сб</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>-</td>
+                            <td>1 ч</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Вс</th>
+                            <td>2 ч (20:00-22:00)</td>
+                            <td>1.5 ч</td>
+                            <td>1 ч</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__inner">
+                <div class="footer__logo-wrapper">
+                    <svg width="100" height="50">
+                        <use xlink:href="icons/code.svg#code-icon"></use>
+                    </svg>
+                    <span class="footer__logo-name">DevProfile</span>
+                </div>
+                <span>Пишу код. Создаю возможности!</span>
+            </div>
+            <nav>
+                <ul class="footer__nav-list">
+                    <li><a class="footer__nav-link" href="#profile">Профиль</a></li>
+                    <li><a class="footer__nav-link" href="#skills">Навыки</a></li> 
+                    <li><a class="footer__nav-link" href="#projects">Проекты</a></li>
+                    <li><a class="footer__nav-link" href="#contacts">Контакты</a></li> 
+                </ul>
+            </nav>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg width="20" height="20">
+                            <use xlink:href="icons/github.svg#github-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg width="20" height="20">
+                            <use xlink:href="icons/linkedin.svg#linkedin-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg width="20" height="20">
+                            <use xlink:href="icons/telegram.svg#telegram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://developer.mozilla.org/en-US/" target="_blank">
+                        <svg width="20" height="20">
+                            <use xlink:href="icons/external-link.svg#external-link-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <span class="footer__add-info">© 2026 DevProfile. Все права защищены.</span>
+    </footer>
+</body>
+</html>
